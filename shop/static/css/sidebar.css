@@ -1,0 +1,29 @@
+#sidebar {
+  width: 220px;
+  padding: 30px 20px 0 0;
+  float: left;
+}
+
+#sidebar ul {
+  margin: 0;
+  padding: 0;
+}
+
+#sidebar ul li {
+  margin: 0;
+  list-style: none;
+  padding: 10px 14px;
+}
+
+#sidebar ul li a {
+  display: block;
+}
+
+#sidebar ul li.selected {
+  background: var(--main-color);
+  border-radius: 4px;
+}
+
+#sidebar ul li.selected a {
+  color: var(--light-1);
+}

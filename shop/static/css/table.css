@@ -1,0 +1,45 @@
+table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  text-align: left;
+  font-size: 14px;
+  padding: 10px;
+  margin: 0;
+}
+
+tbody tr:nth-child(odd) {
+  background: var(--gray-1);
+}
+
+tbody tr.subtotal {
+  background: #ccc;
+}
+
+thead th,
+tbody tr.total {
+  background: var(--main-color);
+  color: var(--light-1);
+  font-weight: bold;
+}
+
+table.cart {
+  margin-bottom: 40px;
+}
+
+table.cart img {
+  width: 180px;
+}
+
+tbody td.num {
+  text-align: right;
+}
+
+td input[type='submit'] {
+  font-size: 12px;
+  padding: 4px 10px;
+}

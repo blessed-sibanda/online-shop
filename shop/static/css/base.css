@@ -1,0 +1,76 @@
+@import url(//fonts.googleapis.com/css?family=Ubuntu);
+
+:root {
+  /* --main-color: #5993bb; */
+  --main-color: #fcca40;
+  /* --secondary-color: #77b6e2; */
+  --secondary-color: #f59f2fb9;
+  --dark-1: #666;
+  --dark-2: #333;
+  --gray-1: #efefef;
+  --light-1: #fff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+a.button,
+input[type='submit'] {
+  color: var(--light-1);
+  background: var(--main-color);
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 14px;
+  border: 0;
+}
+
+a.button.light {
+  color: var(--dark-1);
+  background: #ededed;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+#content {
+  padding: 0 100px;
+  overflow: hidden;
+}
+
+#main {
+  float: left;
+  width: 96%;
+  margin-right: -220px;
+  overflow: hidden;
+}
+
+.neg {
+  color: #dc1616;
+}
