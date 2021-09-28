@@ -41,6 +41,24 @@ Install pip dependencies
 (online-shop) $ pipenv install
 ```
 
+### Install RabbitMQ
+
+Make sure you have docker installer. If not, you can install docker [here](https://docs.docker.com/get-docker/). Run the RabbitMQ docker image using the following command.
+
+```
+$ docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.9-management
+```
+
+On another terminal launch celery
+```
+$ celery -A config worker -l info
+```
+
+On another teminal launch flower (to monitor celery)
+```
+$ celery -A config flower 
+```
+
 ### Install [PostgreSQL](https://www.postgresql.org/download/)
 
 After installing postgresql (using the above link), open `psql` shell

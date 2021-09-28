@@ -7,6 +7,9 @@ name = "pypi"
 django = "*"
 psycopg2-binary = "*"
 pillow = "*"
+redis = "*"
+celery = "==4.4.2"
+flower = "==0.9.3"
 
 [dev-packages]
 autopep8 = "*"
