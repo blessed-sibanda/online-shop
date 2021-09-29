@@ -40,7 +40,7 @@ class OrderItemInline(admin.TabularInline):
 @admin.register(Order)
 class OrderAdmin(admin.ModelAdmin):
     list_display = ('id', 'first_name', 'last_name',
-                    'paid', 'order_detail', 'created')
+                    'paid', 'order_detail', 'order_pdf', 'created')
     list_filter = ['paid', 'created', 'updated']
     inlines = [OrderItemInline]
     actions = [export_to_csv]
@@ -48,3 +48,9 @@ class OrderAdmin(admin.ModelAdmin):
     def order_detail(self, obj):
         url = reverse('orders:admin_order_detail', args=[obj.id])
         return mark_safe(f'<a href="{url}">View</a>')
+
+    def order_pdf(self, obj):
+        url = reverse('orders:admin_order_pdf', args=[obj.id])
+        return mark_safe(f'<a href="{url}">PDF</a>')
+
+    order_pdf.short_description = 'Invoice'
