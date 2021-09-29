@@ -10,6 +10,7 @@ pillow = "*"
 redis = "*"
 celery = "==4.4.2"
 flower = "==0.9.3"
+braintree = "*"
 
 [dev-packages]
 autopep8 = "*"

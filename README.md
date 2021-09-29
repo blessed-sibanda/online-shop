@@ -4,7 +4,7 @@ A django online shop
 
 ## Features
 
-- Customers can browse products, add them to the cart, apply discount codes, go through the checkout process, pay with credit card, and obtain an invoice
+- Customers can browse products, add them to the cart, apply discount codes, go through the checkout process, pay with credit card, and obtain an pdf invoice
 
 - Recommendation engine to recommend products to customers
 
