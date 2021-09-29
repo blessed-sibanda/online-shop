@@ -2,8 +2,13 @@
   clear: both;
 }
 
-.recommendations div {
-  float: left;
+.recommendations .items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.recommendations .items .item {
+  margin: 10px;
 }
 
 .recommendations img {

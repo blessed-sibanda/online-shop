@@ -72,13 +72,19 @@
             </tr>
         </tbody>
     </table>
-    <p>Apply a coupon:</p>
-    <form method='post' action="{% url 'coupons:apply' %}">
-        {% csrf_token %}
-        {{ coupon_apply_form }}
-        <input type="submit" value="Apply">
-    </form>
-    <p class="text-right">
+    <section style='display: flex; align-items: baseline; justify-content: space-between;'>
+        {% include 'shop/product/recommended.html' %}
+        <div>
+            <p>Apply a coupon:</p>
+            <form method='post' action="{% url 'coupons:apply' %}">
+                {% csrf_token %}
+                {{ coupon_apply_form }}
+                <input type="submit" value="Apply">
+            </form>
+        </div>    
+    </section>
+
+    <p style='clear: both;' class="text-right">
         <a href="{% url 'shop:product_list' %}" class='button light'>
             Continue shopping
         </a>

@@ -41,6 +41,22 @@ Install pip dependencies
 (online-shop) $ pipenv install
 ```
 
+### Install Redis
+If you are using Linux or macOS, download the latest Redis version from [https://redis.io/download](https://redis.io/download). Unzip the tar.gz file, enter the redis directory, and compile Redis using the make command, as follows:
+
+```bash
+$ cd redis-x.y.z
+$ make
+```
+
+Redis is now installed on your machine. If you are using Windows, the preferred
+method to install Redis is to enable the Windows Subsystem for Linux (WSL) and install it in the Linux system. You can read instructions on enabling WSL and installing Redis at [https://redislabs.com/blog/redis-on-windows-10/](https://redislabs.com/blog/redis-on-windows-10/).
+
+After installing Redis, use the following shell command to start the Redis server
+```
+$ src/redis-server
+```
+
 ### Install RabbitMQ
 
 Make sure you have docker installer. If not, you can install docker [here](https://docs.docker.com/get-docker/). Run the RabbitMQ docker image using the following command.
