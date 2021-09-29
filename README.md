@@ -6,9 +6,7 @@ A django online shop
 
 - Customers can browse products, add them to the cart, apply discount codes, go through the checkout process, pay with credit card, and obtain an pdf invoice
 
-- Recommendation engine to recommend products to customers
-
-- Internationalization to enable multiple languages in the site
+- Recommendation engine to recommend products usually bought together to customers
 
 ## Setup Instructions
 
