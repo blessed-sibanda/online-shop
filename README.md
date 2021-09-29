@@ -114,4 +114,3 @@ Create a superuser account
 ```
 
 Open the application in your browser at [http://127.0.0.1:8000](http://127.0.0.1:8000)
-s
