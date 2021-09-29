@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "db490a125ed8bda5545f0db8abaa85e88326b49749cc683c781f1faa594b560e"
+            "sha256": "84992247cb3b000d7f82b31283433e37535bda0e410c0baf970a017b00fc4f11"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -49,11 +49,11 @@
         },
         "braintree": {
             "hashes": [
-                "sha256:781252d063438c563cc74a3101727a2472ac1621d491bd217a965add0e8a0c3d",
-                "sha256:946abd50fe2843eec586ac3cec285d27dfae0cc5a43a64b505e8a2800b8a74a6"
+                "sha256:06d10c72ae42ee87d012189ae4972aec394788f14ed6d65b7649bcb449ce6d5c",
+                "sha256:d8134ef1d25fedd196df5f524f098ce71541c2bd7674e3d6178da7ab2dc5e821"
             ],
             "index": "pypi",
-            "version": "==4.12.0"
+            "version": "==3.59.0"
         },
         "celery": {
             "hashes": [
@@ -68,6 +68,7 @@
                 "sha256:2bbf76fd432960138b3ef6dda3dde0544f27cbf8546c458e60baf371917ba9ee",
                 "sha256:50b1e4f8446b06f41be7dd6338db18e0990601dce795c2b1686458aa7e8fa7d8"
             ],
+            "index": "pypi",
             "version": "==2021.5.30"
         },
         "charset-normalizer": {
